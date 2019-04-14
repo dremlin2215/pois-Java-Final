@@ -1,0 +1,6 @@
+    public A test(A param){ ... }    
+    public A test(B param){ ... }    
+    public A test(C param){ ... }    
+    public B test(B param){ ... }
+    public B test(C param){ ... }    
+    public C test(C param){ ... }
