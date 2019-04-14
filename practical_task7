@@ -1,0 +1,13 @@
+package by.pois;
+
+public class TriangleChecker {
+
+    public boolean checkTriangle(int a, int b, int c) {
+
+        boolean res1 = (a == b && b == c); // равносторонний
+        boolean res2 = (a == b || b == c || a==c); // равнобедренный
+        boolean res3 = ((a * a + b * b == c * c) || (a * a + c * c == b * b) || (c * c + b * b == a * a)); // прямоугольный
+
+        return res1 || res2 || res3;
+    }
+}
