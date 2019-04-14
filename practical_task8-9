@@ -75,6 +75,7 @@ class NameComparator implements Comparator<Subject> {
 }
 
 class HoursComparator implements Comparator<Subject> {
+    
     @Override
     public int compare(Subject o1, Subject o2) {
         Integer first = o1.getHours();
