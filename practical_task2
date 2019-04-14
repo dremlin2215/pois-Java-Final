@@ -1,0 +1,25 @@
+/*
+
+1) public, default
+2) public
+3) -
+4) public, default
+5) public, protected, default
+
+*/
+
+package by.bntu.finaltest;
+class Test { //public, default
+    public static void main(String[] args) { //2
+        User user = new User(); //3
+        System.out.println(user.writeCode());
+    }
+}
+
+
+package by.bntu.finaltest;
+class User { //4
+    String writeCode() { //5
+        return "Java us cool!";
+    }
+}
