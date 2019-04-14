@@ -1,0 +1,17 @@
+        StringBuilder stringBuilder = new StringBuilder();
+        String string;
+        try (BufferedReader br = new BufferedReader(new FileReader("number.bin"))) {
+
+            int c;
+            while ((c = br.read()) != -1) {
+
+                stringBuilder.append(c);
+            }
+        } catch (IOException ex) {
+
+            System.out.println(ex.getMessage());
+        }
+        finally {
+             string = stringBuilder.toString();
+        }
+        int result = Integer.getInteger(string);
