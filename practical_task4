@@ -13,3 +13,21 @@ public class First {
     }
     
 }
+
+package by.bntu.second;
+
+import by.bntu.first.First;
+
+public class Second extends First {
+
+    void test() {
+        System.out.println("Method of class Second");
+    }
+
+    public static void main(String[] args) {
+        
+        Second second = new Second();
+        second.test();
+        
+    }
+}
