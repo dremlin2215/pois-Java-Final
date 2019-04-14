@@ -1,0 +1,16 @@
+package by.bsu;
+
+import java.util.List;
+
+public class NumberSearcher {
+
+    public boolean IsNumberInContainter(Integer number, List<Integer> list) {
+
+        for (Integer i : list) {
+            if (i.equals(number)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
