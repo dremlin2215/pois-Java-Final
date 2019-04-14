@@ -1,0 +1,16 @@
+package task3;
+
+public class test {
+    public static void test(int n) {
+
+        if (n > 0) {
+            System.out.print(n + " ");
+            --n;
+            test(n);
+        }else System.out.println("");
+    }
+
+    public static void main(String[] args) {
+        test(10);
+    }
+}
