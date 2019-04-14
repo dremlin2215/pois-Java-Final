@@ -1,0 +1,15 @@
+package by.bntu.first;
+
+public class First {
+
+    public First() {
+    }
+    
+    public First(int n) {
+    }
+
+    void test(){
+        System.out.println("Method of class First");
+    }
+    
+}
