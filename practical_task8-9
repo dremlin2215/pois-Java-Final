@@ -1,0 +1,66 @@
+package by.bsu;
+
+import java.util.Objects;
+
+public class Subject {
+
+    private String name;
+    private int hours;
+
+    public Subject() {
+    }
+
+    public Subject(String name) {
+        this.name = name;
+        this.hours = 0;
+    }
+
+    public Subject(int hours) {
+        this.hours = hours;
+        this.name = "неопределен";
+    }
+
+    public Subject(String name, int hours) {
+        this.name = name;
+        this.hours = hours;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
+    @Override
+    public String toString() {
+        return "Subject{" + "name=" + name + ", hours=" + hours + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Subject)) {
+            return false;
+        }
+        Subject subject = (Subject) o;
+        return hours == subject.hours &&
+                name.equals(subject.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, hours);
+    }
+}
