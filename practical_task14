@@ -1,0 +1,6 @@
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("string.txt"))) {
+            String string = "some string";
+            bufferedWriter.write(string + "\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
