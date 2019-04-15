@@ -1,0 +1,9 @@
+1) What is Set interface
+*Set is a collection of elements which cannot contain duplicate elements.
+
+2)What is true about final class
+*Class declared final is a final class
+*It can not be inherited.
+
+3)Suppose you want to create a custom thread class by extending  java.lang.Thread in order to provide some special functionality. Which of the following must you do?
+*Override run() method
