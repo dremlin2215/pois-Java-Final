@@ -1,14 +1,14 @@
-1) What is Set interface
+1)	What is Set interface
 *Set is a collection of elements which cannot contain duplicate elements.
 
-2) What is true about final class
+2)	What is true about final class
 *Class declared final is a final class
 *It can not be inherited.
 
-3) Suppose you want to create a custom thread class by extending  java.lang.Thread in order to provide some special functionality. Which of the following must you do?
+3)	Suppose you want to create a custom thread class by extending  java.lang.Thread in order to provide some special functionality. Which of the following must you do?
 *Override run() method
 
-4) Какой паттерн следует применять, когда для обеспечения всех возможных комбинаций методов (функциональности объекта класса) простое наследование не подходит в связи с появлением большого количества классов?
+4)	Какой паттерн следует применять, когда для обеспечения всех возможных комбинаций методов (функциональности объекта класса) простое наследование не подходит в связи с появлением большого количества классов?
 *Паттерн декоратор
 
 5)	Consider the following code:
@@ -23,13 +23,13 @@ System.out.printf("Size: %d", list.size()); } }
 What is the result of compiling and running this code?
 *the code does not compile
 
-6) Какие есть способы перебора элементов коллекций, которые являются имплементациями (реализациями) поведения списков?
+6)	Какие есть способы перебора элементов коллекций, которые являются имплементациями (реализациями) поведения списков?
 *For 
 *While
 *foreach
 *Iterator
 
-7) What is the result from compiling and running the following code?
+7)	What is the result from compiling and running the following code?
 import java.util.*;
 class Student{
 private int mark;
@@ -48,10 +48,10 @@ System.out.println(set.size());
 } }
 * Выводы из конструктора и "3"
 
-8) What is the different between Size and Capacity of java collections?
+8)	What is the different between Size and Capacity of java collections?
 *Size - элементов в коллекции в момент времени, capacity - сколько памяти выделено под элементы в момент времени (максимальное количество элементов в момент времени, при его превышении - существует механизм увеличения емкости)
 
-9) What results from running the following code?
+9)	What results from running the following code?
 public class Test implements Runnable {
 public void run() {
 System.out.println("Hello students :)");
@@ -63,7 +63,7 @@ new Thread(new Test()).start();
 } }
 *Compiler error
 
-10) Which is the way in which a thread can enter the waiting state?
+10)	Which is the way in which a thread can enter the waiting state?
 *Invoke object's wait method.
 
 11)	Deletion is faster in LinkedList than ArrayList. (True or False?)
