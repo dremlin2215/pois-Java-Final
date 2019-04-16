@@ -182,13 +182,13 @@ System.out.println(s.id);
 } }
 *the code does not compile
 
-24)	A Java monitor either extend Thread or implements Runnable. (True or False?)
+24) A Java monitor either extend Thread or implements Runnable. (True or False?)
 *False
 
-25)	Which of the following is a marker interface?
+25) Which of the following is a marker interface?
 *Serializable
 
-26)	Which code, inserted into the Student class, allows it to compile?
+26) Which code, inserted into the Student class, allows it to compile?
 class University {
 public enum Ability {
 INTELLIGENT, STRENGTH, AGILITY
@@ -196,10 +196,10 @@ INTELLIGENT, STRENGTH, AGILITY
 class Student { /* insert code here */ }
 *University.Ability ability =University.Ability.INTELLIGENT;
 
-27)	What happens when thread's yield method is called?
+27) What happens when thread's yield method is called?
 *Thread returns to the ready state.
 
-28)	Consider the following code
+28) Consider the following code
 class Test {
 public static void main(String[] args) {
 Integer i1 = null; Integer i2 = 0;
@@ -209,14 +209,14 @@ System.out.println(n1 == n2);
 What is the result?
 *a runtime error
 
-29)	В каких Java-пакетах находятся основные классы для реализации потоков ввода-вывода?
+29) В каких Java-пакетах находятся основные классы для реализации потоков ввода-вывода?
 *java.nio
 *java.io
 
-30)	Какой шаблон проектирования необходимо знать, чтобы по максимум использовать в Java библиотеку реализаций потоков ввода-вывода:
+30) Какой шаблон проектирования необходимо знать, чтобы по максимум использовать в Java библиотеку реализаций потоков ввода-вывода:
 *структурный шаблон – декоратор (decorator)
 
-31)	What will be the result from compiling and running
+31) What will be the result from compiling and running
 the following code?
 import java.io.*;
 public class Test {
@@ -232,10 +232,10 @@ write.close();
 } } }
 *throw a runtime exception
 
-32)	What is Serialization?
+32) What is Serialization?
 *Serialization is the process of writing the state of an object to a byte stream.
 
-33)	What is the result from compiling and running the following code (consider that file text.txt already exists
+33) What is the result from compiling and running the following code (consider that file text.txt already exists
 with some strings)?
 import java.io.*;
 public class Test {
@@ -254,11 +254,11 @@ e.printStackTrace();
 } } }
 *the code does not compile
 
-34)	С помощью каких реализаций соответствующих байтовых потоков (классов-обвёрток) можно осуществить удобное чтение и запись данных любого примитивного типа, а не только значений, которые вмещаются в 8 бит (0…255)?
+34) С помощью каких реализаций соответствующих байтовых потоков (классов-обвёрток) можно осуществить удобное чтение и запись данных любого примитивного типа, а не только значений, которые вмещаются в 8 бит (0…255)?
 *BufferedOutputStream / BufferedInputStream
 *DataOutputStream / DataInputStream
 
-35)	What will the following code do?
+35) What will the following code do?
 import java.io.*;
 public class Test {
 public static void main(String[] args) {
@@ -278,13 +278,13 @@ e.printStackTrace();
 } } }
 *the code writes numbers from 200 to 999
 
-36)	What invokes a thread's run method?
+36) What invokes a thread's run method?
 *start() method of the thread class.
 
-37)	Какой необходимо классу реализовать интерфейс, чтобы объект данного класса обладал поведением автоматического освобождения занятыхим ресурсов с использованием специальной конструкции try-with-resources, которая появилась в JDK 7.0?
+37) Какой необходимо классу реализовать интерфейс, чтобы объект данного класса обладал поведением автоматического освобождения занятыхим ресурсов с использованием специальной конструкции try-with-resources, которая появилась в JDK 7.0?
 *AutoCloseable
 
-38)	What will be happened when we try to compile and run the following code (consider that file xxx.bin already exists with some strings)?
+38) What will be happened when we try to compile and run the following code (consider that file xxx.bin already exists with some strings)?
 import java.io.*;
 public class Test {
 public static void main(String[] args) {
@@ -304,14 +304,14 @@ System.out.println(s);
 } }
 *a compiler error
 
-39)	Что из нижеперечисленного верно относительно перечисляемого типа в Java):
+39) Что из нижеперечисленного верно относительно перечисляемого типа в Java):
 *Перечисление представляет собой список именованных констант.
 *Перечисления создаются (объявляются) с помощью ключевого слова enum и неявно является разновидностью классов в Java.
 *Невозможно создать напрямую объект перечисления с использованием оператора new.
 *Все объекты перечисляемого типа создаются сразу же, как только происходит загрузка соответствующего типа в память.
 *Невозможно создать объекты перечисления содинаковым содержимым.
 
-40)	Consider the following code:
+40) Consider the following code:
 enum WordPart{
 NORTH, SOUTH, WEST, EAST;
 public String toString() {
@@ -325,10 +325,10 @@ System.out.println(WordPart.valueOf(s));
 What is the result of compiling and running this code?
 *W
 
-41)	What is a transient variable?
+41) What is a transient variable?
 *A transient variable is a variable that may not be serialized during Serialization.
 
-42)	What will the following code print?
+42) What will the following code print?
 enum RGB {
 RED("red"), GREEN("green"), BLUE("blue");
 String color;
@@ -342,10 +342,10 @@ System.out.println(rgb);
 } }
 *the code does not compile
 
-43)	What is Deserialization?
+43) What is Deserialization?
 *Deserialization is the process of restoring state of an object from a byte stream.
 
-44)	What will the following code print?
+44) What will the following code print?
 public class Test {
 public static void main(String[] args) {
 byte bt = -100;
@@ -358,17 +358,17 @@ case 1000: System.out.print("1000 ");
 } } }
 *a compiler error
 
-45)	Из каких компонентов состоит библиотекаApache log4j?
+45) Из каких компонентов состоит библиотекаApache log4j?
 log4j core and log4j api
 
-46)	Выберите неправильные утверждения относительно перечисляемого типа в Java:
+46) Выберите неправильные утверждения относительно перечисляемого типа в Java:
 *Перечисление неявно наследуется от класса Object и больше не может иметь никаких родителей.
 *Перечисление может иметь несколько родителей (для них размешено множественное наследование классов).
 *Можно создать классы, которые наследуются (расширяются) от перечисляемого типа.
 *Перечисление не может реализовывать ни одного интерфейса.
 *Перечисление может реализовывать любой интерфейс и только один.
 
-47)	What is the result from compiling and running the following code?
+47) What is the result from compiling and running the following code?
 enum TrafficLights {
 RED, YELLOW, GREEN;
 private TrafficLights() {
@@ -380,16 +380,16 @@ TrafficLights red = TrafficLights.RED;
 } }
 *light light light
 
-48)	Which method must be implemented by all threads?
+48) Which method must be implemented by all threads?
 *run
 
-49)	Choose all combinations of types and expressions
+49) Choose all combinations of types and expressions
 cases allowed to switch-statement in JDK 7.0:
 *type of switch-expression –> String, type of caselabel -> String
 *type of switch-expression –>Character, type of case-label -> char
 *type of switch-expression –> enum type, type of case-label -> the same enum-type
 
-50)	What is the result from compiling and running the following code?
+50) What is the result from compiling and running the following code?
 enum Season { SPRING, SUMMER, AUTUMN, WINTER }
 public class Test {
 public static void main(String[] args) {
@@ -407,7 +407,7 @@ System.out.println("What season do you mean?");
 } } }
 *It’s summer!
 
-51)	Consider the following code:
+51) Consider the following code:
 public class Test {
 public static void main(String[] args) {
 int i = 1, j = 11;
@@ -419,11 +419,11 @@ System.out.printf("i = %d j = %d", i, j);
 What will be the result of print?
 *i = 6 j = 6
 
-52)	Что можно утверждать относительно конструкторов перечисляемого типа (Enum) в Java:
+52) Что можно утверждать относительно конструкторов перечисляемого типа (Enum) в Java:
 *Конструктор по умолчанию в Enum всегда создаётся неявно.
 *G. Конструктор вызывается неявно (автоматически) для создания объектов Enum и инициализации его константных переменных.
 
-53)	Consider the following code:
+53) Consider the following code:
 import java.util.*;
 class Student implements Comparable<Student> {
 private int mark;
@@ -445,7 +445,7 @@ System.out.println(set); } }
 What is the result?
 *[7, 8, 9, 10]
 
-54)	Consider the following code:
+54) Consider the following code:
 import java.util.*;
 public class Test {
 public static void main(String[] args) {
@@ -457,10 +457,10 @@ System.out.printf("Size: %d", list.size()); } }
 What is the result of compiling and running this code?
 *the output: Size: 6
 
-55)	How the method is called which retrieves the number of elements from any collection from JCF?
+55) How the method is called which retrieves the number of elements from any collection from JCF?
 *size()
 
-56)	What is the result from compiling and running the following code?
+56) What is the result from compiling and running the following code?
 import java.util.*;
 class Student {
 private int mark;
@@ -477,17 +477,17 @@ System.out.println(set.size());
 } }
 *3
 
-57)	What happens when thread's sleep() method is called?
+57) What happens when thread's sleep() method is called?
 *Thread returns to the waiting state.
 
-58)	Element taking is faster in LinkedList than ArrayList.
+58) Element taking is faster in LinkedList than ArrayList.
 (True or False?)
 *False
 
-59)	What is currentThread?
+59) What is currentThread?
 *It is a Thread public static method used to obtain a reference to the current thread.
 
-60)	What is the result from running the following code?
+60) What is the result from running the following code?
 import java.util.*;
 public class Test {
 public static void main(String[] args) {
@@ -499,19 +499,19 @@ System.out.print(item + " ");
 } } }
 *throw a runtime exception
 
-61)	What is Synchronization?
+61) What is Synchronization?
 *Synchronization is the capability to control the access of multiple threads to shared resources.
 
-62)	Does garbage collection guarantee that a program will not run out of memory? (Yes or No?)
+62) Does garbage collection guarantee that a program will not run out of memory? (Yes or No?)
 *No.
 
-63)	What is a marker interface?
+63) What is a marker interface?
 *Marker interface is an interface with no method.
 
-64)	When a char value is added to a short value, what is the type of the result?
+64) When a char value is added to a short value, what is the type of the result?
 *Integer
 
-65)	What is the result from compiling and running the following code?
+65) What is the result from compiling and running the following code?
 import java.util.*;
 class Man {
 private int power;
@@ -531,7 +531,7 @@ tree.add(man1);
 System.out.println(tree.size()); } }
 *throw a runtime exception
 
-66)	Consider the following code:
+66) Consider the following code:
 import java.util.*;
 class Student {
 private int mark;
@@ -551,7 +551,7 @@ System.out.println(set.size());
 What is the result?
 *3
 
-67)	What is the result from compiling and running the following code?
+67) What is the result from compiling and running the following code?
 import java.util.*;
 public class Test {
 public static void main(String[] args) {
@@ -564,10 +564,10 @@ set.add("\u0003");
 System.out.println(set); } }
 *[☺, ☻, ♥, 1, 2, 3, a, b, c]
 
-68)	Что декларирует методология TDD?
+68) Что декларирует методология TDD?
 Сначало тесты. Тесты должны быть провалены. Потом пишется програмный код до тех пор пока не пройдёт все тесты.
 
-69)	Опишите иерархию поведения библиотеки JCF и
+69) Опишите иерархию поведения библиотеки JCF и
 основные её имплементации:
 Отдельно Map >> SortedMap >> NavigableMap
 далее основной интерфейс Iterable
