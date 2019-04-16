@@ -1,17 +1,17 @@
-1)	What is Set interface
+1) What is Set interface
 *Set is a collection of elements which cannot contain duplicate elements.
 
-2)	What is true about final class
+2) What is true about final class
 *Class declared final is a final class
 *It can not be inherited.
 
-3)	Suppose you want to create a custom thread class by extending  java.lang.Thread in order to provide some special functionality. Which of the following must you do?
+3) Suppose you want to create a custom thread class by extending  java.lang.Thread in order to provide some special functionality. Which of the following must you do?
 *Override run() method
 
-4)	Какой паттерн следует применять, когда для обеспечения всех возможных комбинаций методов (функциональности объекта класса) простое наследование не подходит в связи с появлением большого количества классов?
+4) Какой паттерн следует применять, когда для обеспечения всех возможных комбинаций методов (функциональности объекта класса) простое наследование не подходит в связи с появлением большого количества классов?
 *Паттерн декоратор
 
-5)	Consider the following code:
+5) Consider the following code:
 import java.util.*;
 public class Test{
 public static void main(String[] args) {
@@ -23,13 +23,13 @@ System.out.printf("Size: %d", list.size()); } }
 What is the result of compiling and running this code?
 *the code does not compile
 
-6)	Какие есть способы перебора элементов коллекций, которые являются имплементациями (реализациями) поведения списков?
+6) Какие есть способы перебора элементов коллекций, которые являются имплементациями (реализациями) поведения списков?
 *For 
 *While
 *foreach
 *Iterator
 
-7)	What is the result from compiling and running the following code?
+7) What is the result from compiling and running the following code?
 import java.util.*;
 class Student{
 private int mark;
@@ -48,10 +48,10 @@ System.out.println(set.size());
 } }
 * Выводы из конструктора и "3"
 
-8)	What is the different between Size and Capacity of java collections?
+8) What is the different between Size and Capacity of java collections?
 *Size - элементов в коллекции в момент времени, capacity - сколько памяти выделено под элементы в момент времени (максимальное количество элементов в момент времени, при его превышении - существует механизм увеличения емкости)
 
-9)	What results from running the following code?
+9) What results from running the following code?
 public class Test implements Runnable {
 public void run() {
 System.out.println("Hello students :)");
@@ -63,13 +63,13 @@ new Thread(new Test()).start();
 } }
 *Compiler error
 
-10)	Which is the way in which a thread can enter the waiting state?
+10) Which is the way in which a thread can enter the waiting state?
 *Invoke object's wait method.
 
-11)	Deletion is faster in LinkedList than ArrayList. (True or False?)
+11) Deletion is faster in LinkedList than ArrayList. (True or False?)
 *True
 
-12)	What is the main different between Decorator and Strategy Patterns?
+12) What is the main different between Decorator and Strategy Patterns?
 *Стратегия - характеризует полноту поведения класса, по сути реализует набор поведений как для одного так и для нескольких классов. Декоратор обеспечивает многообразие комбинаций поведения, когда наследование не подходит в связи с огромным количеством классов, кроме того не может существовать без основного класса  
 
 13) What will be the result of compiling and running this code?
@@ -87,7 +87,7 @@ new Test().method("hi", "students",1,2);
 Java array - обычный массив (выделенная область памяти - элементы расположены друг за другом, по индексу расчитывается место нахождения элемента) с присущей ему базовой функциональностью (доп функциональность частично реализована через утилитный класс Arrays).
 Java collection - контейнер с дополнительной функциональностью, реализует интерфейс Collection. Кроме того определенные типы коллекций реализуют не только хранение одиночных элементов, но и хранение в связке ключ - значение или упорядоченных значений.
 
-15)	Каких методов не хватает в декларированииинтерфейса базового поведения коллекций?
+15) Каких методов не хватает в декларированииинтерфейса базового поведения коллекций?
 interface Collection implements Iterable {
 boolean contains(Object o);
 boolean containsAll(Collection<?> c);
@@ -106,13 +106,13 @@ int hashCode();
 *Iterator <E> iterator()
 *size()
 
-16)	Which of the following may be synchronized?
+16) Which of the following may be synchronized?
 * Blocks within methods
 * Static methods
 * Blocks within static methods
 * Dynamic methods
 
-17)	What results from running the following code?
+17) What results from running the following code?
 import java.util.*;
 public class Test {
 public static void main(String[] args) {
@@ -124,7 +124,7 @@ System.out.print(integer + " ");
 } } }
 *a compiler error
 
-18)	Consider the following Shape class:
+18) Consider the following Shape class:
 abstract class Shape{
 private int x, y;
 public Shape(int x, int y) { this.x = x; this.y = y; }
@@ -137,18 +137,18 @@ private int radius; }
 private int radius;
 public void draw() { /* some code here */} }
 
-19)	Какие основные методы задекларированы в интерфейсе Iterator?
+19) Какие основные методы задекларированы в интерфейсе Iterator?
 *a)	default void forEachRemaining (Consumer <? super E> action) 
 *b)	boolean hasNext()
 *c)	E next()
 *d)	default void remove()
 
-20)	What is TreeSet Interface?
+20) What is TreeSet Interface?
 *It is a Set implemented when we want elements in a tree based order.
 *It is a Set implemented when we want elements in a sorted order.
 *It is a Set implemented when we want elements in a binary tree format.
 
-21)	Which statement is true about the classes and interfaces in the following code?
+21) Which statement is true about the classes and interfaces in the following code?
 interface I { void some(String s); }
 class A implements I {
 public void some(String s) {/*some code here*/} //6
@@ -163,10 +163,10 @@ Object method2() {/*some code here*/} //16
 }
 *Compilation of class C will fail because of an error in line 16.
 
-22)	What is the different between old (since JDK1.0) containers (BitSet, Dictionary, Tashtable, Properties, Vector, Stack, etc.) and new containers (ArrayList, LinkedList, HashMap, TreeMap, PriorityQueue, etc.)?
+22) What is the different between old (since JDK1.0) containers (BitSet, Dictionary, Tashtable, Properties, Vector, Stack, etc.) and new containers (ArrayList, LinkedList, HashMap, TreeMap, PriorityQueue, etc.)?
 *Старые контейнеры потокобезопасны, новые нет (но для них существуют специальные классы обертки обеспечивающие данную функциональность)
 
-23)	What is the result from compiling and running the following code?
+23) What is the result from compiling and running the following code?
 class Human {
 String name = "no name";
 public Human(String name) { this.name = name; }
